@@ -29,7 +29,6 @@ def renderWordCount(dic):
         if len(word[1]) > maxLength:
             maxLength = len(word[1])
         
-    print(maxLength)
     for word in counts:
         print(f'{word[1]}\t'.expandtabs(maxLength + 2) + "#" * word[0])
 
